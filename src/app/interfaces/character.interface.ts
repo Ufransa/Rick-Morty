@@ -5,10 +5,7 @@ export interface Character {
 }
 
 export interface Info {
-    count: number;
-    pages: number;
     next:  string;
-    prev:  null;
 }
 
 export interface Result {

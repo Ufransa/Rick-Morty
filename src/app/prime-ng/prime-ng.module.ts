@@ -8,6 +8,7 @@ import {ButtonModule} from 'primeng/button';
 import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
 import {SkeletonModule} from 'primeng/skeleton';
+import {PaginatorModule} from 'primeng/paginator';
 
 
 
@@ -21,6 +22,7 @@ import {SkeletonModule} from 'primeng/skeleton';
     MessagesModule,
     MessageModule,
     SkeletonModule,
+    PaginatorModule
   ]
 })
 export class PrimeNgModule { }
