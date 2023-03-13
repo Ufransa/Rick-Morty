@@ -1,0 +1,21 @@
+<p-card 
+
+    [header]="rickAndMorty.name"
+    [subheader]="rickAndMorty.status"
+    [style]="{width: '360px'}" 
+    styleClass="p-card-shadow">
+
+        <img 
+            [alt]="rickAndMorty.name" 
+            [src]="rickAndMorty.image">
+
+        <hr>
+
+        <p> <b> Species: </b> {{rickAndMorty.species}} </p>
+        <p> <b> Sub-Specie: </b> {{rickAndMorty.type}} </p>
+        <p> <b> Origin: </b> {{rickAndMorty.origin.name}} </p>
+        <p> <b> Last known location: </b> {{rickAndMorty.location.name}} </p>
+        <p> <b> Created date: </b> {{rickAndMorty.created | date:'MMMM dd, yyyy'}} </p>
+        
+    
+</p-card>

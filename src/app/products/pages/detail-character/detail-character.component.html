@@ -1,0 +1,52 @@
+<div class="image-background">
+    
+
+    <div class="col-8 md:col-6 lg:col-3 mt-7" style="float: right;" *ngIf="character | async as character">
+
+        <p-card class="opacity"
+
+        [header]="character.name"
+        [subheader]="character.status"
+        [style]="{width: '360px'}" 
+        styleClass="p-card-shadow">
+
+            <img 
+                [alt]="character.name" 
+                [src]="character.image">
+
+            <hr>
+
+            <p> <b> Species: </b> {{character.species}} </p>
+            <p> <b> Sub-Specie: </b> {{character.type}} </p>
+            <p> <b> Gender: </b> {{character.gender}} </p>
+            <p> <b> Origin: </b> {{character.origin.name}} </p>
+            <p> <b> Last known location: </b> {{character.location.name}} </p>
+            <p> <b> Created date: </b> {{character.created | date:'MMMM dd, yyyy'}} </p>
+
+            <button
+                (click)="onGoBack()"
+                pButton
+                type="button" 
+                label="Go back"
+                class="p-button-rounded p-button-secondary mt-2">
+            </button>
+            
+        </p-card>
+
+    </div> 
+</div>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .image-background{
+        background-image: url('../../../../assets/rmbackground2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+    }
+</style>
+
+
