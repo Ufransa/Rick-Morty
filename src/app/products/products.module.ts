@@ -11,6 +11,7 @@ import { CharacterComponent } from './pages/character/character.component';
 import { LocationComponent } from './pages/location/location.component';
 import { EpisodesComponent } from './pages/episodes/episodes.component';
 import { DetailCharacterComponent } from './pages/detail-character/detail-character.component';
+import { CountPipe } from './pipes/count.pipe';
 
 
 
@@ -22,6 +23,9 @@ import { DetailCharacterComponent } from './pages/detail-character/detail-charac
     LocationComponent,
     EpisodesComponent,
     DetailCharacterComponent,
+
+    //Pipes
+    CountPipe
   ],
   imports: [
     CommonModule,
