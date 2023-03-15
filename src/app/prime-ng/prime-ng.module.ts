@@ -1,26 +1,26 @@
 import { NgModule } from '@angular/core';
 
+import {ButtonModule} from 'primeng/button';
 import {CardModule} from 'primeng/card';
 import {InputTextModule} from 'primeng/inputtext';
 import {MenubarModule} from 'primeng/menubar';
-import {TableModule} from 'primeng/table';
-import {ButtonModule} from 'primeng/button';
-import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
+import {MessagesModule} from 'primeng/messages';
 import {ScrollTopModule} from 'primeng/scrolltop';
+import {TableModule} from 'primeng/table';
 
 
 
 @NgModule({
   exports: [
-    InputTextModule,
-    CardModule,
-    MenubarModule,
-    TableModule,
     ButtonModule,
-    MessagesModule,
+    CardModule,
+    InputTextModule,
+    MenubarModule,
     MessageModule,
-    ScrollTopModule
+    MessagesModule,
+    ScrollTopModule,
+    TableModule,
   ]
 })
 export class PrimeNgModule { }

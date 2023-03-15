@@ -1,8 +1,12 @@
 import { Component, HostListener, Inject, OnInit } from '@angular/core';
-import { ProductService } from '../services/product-service.service';
-import { Info, Result } from '../../../interfaces/character.interface';
-import { take } from 'rxjs';
 import { DOCUMENT } from '@angular/common';
+
+import { ProductService } from '../services/product-service.service';
+
+import { Info, Result } from '../../interfaces/character.interface';
+
+import { take } from 'rxjs';
+
 
 @Component({
   selector: 'app-character',
@@ -17,7 +21,6 @@ export class CharacterComponent implements OnInit {
 
   public pageNum: number = 1
   public hideScrollHeight = 200
-  public showScrollHeight = 500
   public showGoUpButton = false
   
   private query: string = ''

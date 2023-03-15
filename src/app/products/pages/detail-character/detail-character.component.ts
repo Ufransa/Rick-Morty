@@ -1,18 +1,18 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+
 import { Observable, take } from 'rxjs';
 
-import { Result } from '../../../interfaces/character.interface';
+import { Result } from '../../interfaces/character.interface';
+
 import { ProductService } from '../services/product-service.service';
 
 
 
 @Component({
   selector: 'app-detail-character',
-  templateUrl: './detail-character.component.html',
-  styles: [
-  ]
+  templateUrl: './detail-character.component.html'
 })
 export class DetailCharacterComponent implements OnInit {
 

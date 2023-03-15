@@ -1,38 +1,38 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SharedModule } from '../shared/shared.module';
-import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { InfiniteScrollModule } from "ngx-infinite-scroll";
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { ProductsRoutingModule } from './products-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
-import { HomeComponent } from './pages/home/home.component';
 import { CharacterComponent } from './pages/character/character.component';
-import { LocationComponent } from './pages/location/location.component';
-import { EpisodesComponent } from './pages/episodes/episodes.component';
-import { DetailCharacterComponent } from './pages/detail-character/detail-character.component';
 import { CountPipe } from './pipes/count.pipe';
+import { DetailCharacterComponent } from './pages/detail-character/detail-character.component';
+import { EpisodesComponent } from './pages/episodes/episodes.component';
+import { HomeComponent } from './pages/home/home.component';
+import { LocationComponent } from './pages/location/location.component';
 
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
     CharacterComponent,
-    LocationComponent,
-    EpisodesComponent,
     DetailCharacterComponent,
+    EpisodesComponent,
+    HomeComponent,
+    LocationComponent,
 
     //Pipes
     CountPipe
   ],
   imports: [
     CommonModule,
+    InfiniteScrollModule,
+    PrimeNgModule,
     ProductsRoutingModule,
     SharedModule,
-    PrimeNgModule,
-    InfiniteScrollModule
   ]
 })
 export class ProductsModule { }

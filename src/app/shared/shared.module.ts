@@ -3,17 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
-import { MenuComponent } from './components/menu/menu.component';
-import { CardComponent } from './components/card/card.component';
 import { Error404Component } from './components/error404/error404.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 
 @NgModule({
   declarations: [
+    Error404Component,
     MenuComponent,
-    CardComponent,
-    Error404Component
   ],
   imports: [
     CommonModule,
@@ -21,7 +19,6 @@ import { Error404Component } from './components/error404/error404.component';
   ],
   exports: [
     MenuComponent,
-    CardComponent
   ]
 })
 export class SharedModule { }
