@@ -7,8 +7,7 @@ import {TableModule} from 'primeng/table';
 import {ButtonModule} from 'primeng/button';
 import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
-import {SkeletonModule} from 'primeng/skeleton';
-import {PaginatorModule} from 'primeng/paginator';
+import {ScrollTopModule} from 'primeng/scrolltop';
 
 
 
@@ -21,8 +20,7 @@ import {PaginatorModule} from 'primeng/paginator';
     ButtonModule,
     MessagesModule,
     MessageModule,
-    SkeletonModule,
-    PaginatorModule
+    ScrollTopModule
   ]
 })
 export class PrimeNgModule { }

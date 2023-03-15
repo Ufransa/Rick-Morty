@@ -1,1 +1,38 @@
-<p>location works!</p>
+
+<div class="mx-3">
+
+    <h1 class="rickymorty text-center"> LOCATION TABLE </h1>
+    
+    <p-table [value]="locations" [tableStyle]="{'max-width': '100%'}">
+
+        <ng-template pTemplate="header">
+
+            <tr>
+                <th> Id </th>
+                <th> Name </th>
+                <th> Type </th>
+                <th> Dimension </th>
+                <th> Residents </th>
+                <th> Created at </th>
+            </tr>
+
+        </ng-template>
+
+        <ng-template pTemplate="body" let-location>
+
+            <tr >
+                <td>{{location.id}}</td>
+                <td>{{location.name}}</td>
+                <td>{{location.type}}</td>
+                <td>{{location.dimension}}</td>
+                <td>{{location.residents}}</td>
+                <td>{{location.created}}</td>
+            </tr>
+
+        </ng-template>
+
+    </p-table>
+    
+</div>
+
+

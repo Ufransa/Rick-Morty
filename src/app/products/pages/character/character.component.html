@@ -1,6 +1,9 @@
-<h1 class="rickymorty">Character list</h1>
 
-<div class="grid" infinite-scroll (scrolled)="onScrollDown()">
+<div class="ml-3">
+
+    <h1 class="rickymorty text-center">CHARACTER LIST</h1>
+
+    <div class="grid" infinite-scroll (scrolled)="onScrollDown()">
 
     <div class="col-8 md:col-6 lg:col-3" *ngFor="let rickAndMorty of characters">
         <p-card
@@ -28,15 +31,19 @@
         <p-message severity="warn" text="Ups! There is nothing to show"> </p-message>
     </div>
     
+    <p-scrollTop 
+        [ngClass]="'no-hidden'"
+        *ngIf="showGoUpButton"
+        (click)="onScrollTop()" 
+        target="window" 
+        styleClass="custom-scrolltop" 
+        [threshold]="100" 
+        icon="pi pi-arrow-up">
+    </p-scrollTop>
+    
+</div>
 </div>
 
-<button
-    [ngClass]="'no-hidden'"
-    *ngIf="showGoUpButton"
-    (click)="onScrollTop()"
-    pButton 
-    pRipple 
-    type="button" 
-    label="Go up" 
-    class="p-button-rounded p-button-secondary">
-</button>
+
+
+

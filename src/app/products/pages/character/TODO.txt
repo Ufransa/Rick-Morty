@@ -1,3 +1,1 @@
 TODO: Barra de busqueda
-TODO: Paginación
-TODO: Botón GO UP
