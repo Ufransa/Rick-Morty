@@ -2,13 +2,24 @@
 <div class="mx-3">
 
     <h1 class="rickymorty text-center"> LOCATIONS </h1>
+
+    <p-toolbar>
     
-    <p-table [value]="locations" [tableStyle]="{'max-width': '100%'}">
+        <div class="p-toolbar-group-end">
+    
+            <p-button (click)="changeOrder('name')" class="mr-2" label="Order by name" icon="pi pi-sort" styleClass="p-button-success"></p-button>
+    
+            <p-button (click)="changeOrder('type')" class="mr-2" label="Order by type" icon="pi pi-sort" styleClass="p-button-danger"></p-button>
+    
+        </div>
+    
+    </p-toolbar>
+    
+    <p-table [value]="locations | sortBy:sortBy" [tableStyle]="{'max-width': '100%'}">
 
         <ng-template pTemplate="header">
 
             <tr>
-                <th> Id </th>
                 <th> Name </th>
                 <th> Type </th>
                 <th> Dimension </th>
@@ -21,7 +32,6 @@
         <ng-template pTemplate="body" let-location>
 
             <tr >
-                <td>{{location.id}}</td>
                 <td>{{location.name}}</td>
                 <td>{{location.type}}</td>
                 <td>{{location.dimension}}</td>

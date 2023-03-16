@@ -20,6 +20,7 @@ const routes: Routes = [
     {
         path: 'by/:id',
         component: DetailCharacterComponent
+        
     },
     {
         path: 'location',

@@ -1,5 +1,5 @@
 
-export interface Character {
+export interface CharacterResponse {
     info:    Info;
     results: Result[];
 }

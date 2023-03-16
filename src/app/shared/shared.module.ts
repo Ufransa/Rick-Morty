@@ -11,14 +11,14 @@ import { MenuComponent } from './components/menu/menu.component';
 @NgModule({
   declarations: [
     Error404Component,
-    MenuComponent,
+    MenuComponent
   ],
   imports: [
     CommonModule,
     PrimeNgModule
   ],
   exports: [
-    MenuComponent,
+    MenuComponent
   ]
 })
 export class SharedModule { }

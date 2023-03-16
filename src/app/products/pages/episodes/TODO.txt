@@ -1,0 +1,1 @@
+TODO: Que al hacer click en los characters me aparezcan en otra ruta la miniatura de estos

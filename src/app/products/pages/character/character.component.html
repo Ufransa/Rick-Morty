@@ -1,47 +1,57 @@
 
-<div class="ml-3">
+<div class="mx-auto">
 
-    <h1 class="rickymorty text-center">CHARACTER LIST</h1>
+    
 
+    <div class="card-container">
+        
+        <h1 class="rickymorty text-center">CHARACTER LIST</h1>
+
+    </div>
+    
     <div class="grid" infinite-scroll (scrolled)="onScrollDown()">
 
-    <div class="col-8 md:col-6 lg:col-3" *ngFor="let rickAndMorty of characters">
-        <p-card
+        <div class="col-8 md:col-6 lg:col-3" *ngFor="let rickAndMorty of characters">
 
-        [header]="rickAndMorty.name"
-        [subheader]="rickAndMorty.status"
-        [style]="{width: '360px'}" 
-        styleClass="p-card-shadow">
+            <p-card 
 
-            <a [routerLink]="[ '/by/', rickAndMorty.id ]">
-            <img 
-                [alt]="rickAndMorty.name" 
-                [src]="rickAndMorty.image">
-            </a>
+            [header]="rickAndMorty.name"
+            [subheader]="rickAndMorty.status"
+            [style]="{width: '360px'}" 
+            styleClass="p-card-shadow">
 
-            <hr>
+                <a [routerLink]="[ '/by/', rickAndMorty.id ]">
+                <img 
+                    [alt]="rickAndMorty.name" 
+                    [src]="rickAndMorty.image">
+                </a>
 
-            <p> <b> Species: </b> {{rickAndMorty.species}} </p>
-            <p> <b> Last known location: </b> {{rickAndMorty.location.name}} </p>
-            
-        </p-card>
-    </div>
+                <hr>
 
-    <div *ngIf="characters.length <=0">
-        <p-message severity="warn" text="Ups! There is nothing to show"> </p-message>
-    </div>
+                <p> <b> Species: </b> {{rickAndMorty.species}} </p>
+                <p> <b> Last known location: </b> {{rickAndMorty.location.name}} </p>
+                
+            </p-card>
+
+        </div>
+
+        <div *ngIf="characters.length <=0">
+
+            <p-message severity="warn" text="Ups! There is nothing to show"> </p-message>
+
+        </div>
+        
+        <p-scrollTop 
+            [ngClass]="'no-hidden'"
+            *ngIf="showGoUpButton"
+            (click)="onScrollTop()" 
+            target="window" 
+            styleClass="custom-scrolltop" 
+            [threshold]="100" 
+            icon="pi pi-arrow-up">
+        </p-scrollTop>
     
-    <p-scrollTop 
-        [ngClass]="'no-hidden'"
-        *ngIf="showGoUpButton"
-        (click)="onScrollTop()" 
-        target="window" 
-        styleClass="custom-scrolltop" 
-        [threshold]="100" 
-        icon="pi pi-arrow-up">
-    </p-scrollTop>
-    
-</div>
+    </div>
 </div>
 
 

@@ -12,6 +12,7 @@ import { DetailCharacterComponent } from './pages/detail-character/detail-charac
 import { EpisodesComponent } from './pages/episodes/episodes.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LocationComponent } from './pages/location/location.component';
+import { SortByPipe } from './pipes/sort-by.pipe';
 
 
 
@@ -25,7 +26,8 @@ import { LocationComponent } from './pages/location/location.component';
     LocationComponent,
 
     //Pipes
-    CountPipe
+    CountPipe,
+    SortByPipe
   ],
   imports: [
     CommonModule,

@@ -8,6 +8,8 @@ import {MessageModule} from 'primeng/message';
 import {MessagesModule} from 'primeng/messages';
 import {ScrollTopModule} from 'primeng/scrolltop';
 import {TableModule} from 'primeng/table';
+import {OrderListModule} from 'primeng/orderlist';
+import {ToolbarModule} from 'primeng/toolbar';
 
 
 
@@ -21,6 +23,8 @@ import {TableModule} from 'primeng/table';
     MessagesModule,
     ScrollTopModule,
     TableModule,
+    OrderListModule,
+    ToolbarModule,
   ]
 })
 export class PrimeNgModule { }

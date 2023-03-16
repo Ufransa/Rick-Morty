@@ -16,8 +16,9 @@ export class LocationComponent implements OnInit {
     next: null,
     prev: null,
   }
-  
+  public sortBy?: keyof Result
   public pageNum: number = 1
+  public residentOrder: 'asc' | 'desc' = 'asc';
 
   constructor( private productService: ProductService ) {}
 
@@ -43,4 +44,9 @@ export class LocationComponent implements OnInit {
         }
       })
   }
+
+  changeOrder( value: keyof Result) {
+    this.sortBy = value
+  }
+
 }

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 
-import { Result } from '../../interfaces/character.interface';
+import { Result, CharacterResponse } from '../../interfaces/character.interface';
 import { Result as LocationResult } from '../../interfaces/location.interface';
 import { Result as EpisodesResult } from '../../interfaces/episodes.interface';
 
@@ -22,7 +22,7 @@ export class ProductService {
 
   constructor( private http: HttpClient ) { }
 
-  getCharacter( query= '', page = 200): Observable<Result[]> {
+  getCharacter( query: string = '', page:number = 200): Observable<Result[]> {
     return this.http.get<Result[]>(`${ this.apiService }/character/?name=${ query }&page=${ page }`)
   }
 

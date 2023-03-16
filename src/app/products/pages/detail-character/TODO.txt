@@ -1,1 +1,0 @@
-TODO: Proteger ruta para que no accedan desde fuera

@@ -12,6 +12,5 @@ export class CountPipe implements PipeTransform {
         const items = value.split(',')
         return items.length
         
-    }
-    
+    }    
 }
