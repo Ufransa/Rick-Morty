@@ -16,22 +16,22 @@ export class MenuComponent {
         this.menuItems = [
           {
             label: 'Home',
-            icon: 'pi pi-home',
+            icon: 'home-button-icon',
             routerLink: ['home']
           },
           {
             label: 'Character',
-            icon: 'pi pi-prime',
+            icon: 'characters-button-icon',
             routerLink: ['character']
           },
           {
             label: 'Locations',
-            icon: 'pi pi-globe',
+            icon: 'locations-button-icon',
             routerLink: ['location']
           },
           {
             label: 'Episodes',
-            icon: 'pi pi-file',
+            icon: 'episodes-button-icon',
             routerLink: ['episodes']
           },
         ]

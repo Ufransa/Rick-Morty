@@ -1,90 +1,22 @@
 body {
+    background-color: #f1f1f1;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F7D26E;
 }
 
-header {
-    background-color: #1B4B72;
-    color: white;
-    padding: 20px;
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
-h1 {
-    margin: 0;
-    font-size: 48px;
-    text-align: center;
-}
-
-section {
+.logo-container{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 50px;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
 }
 
-.card {
-    width: 300px;
-    height: 400px;
-    margin: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    position: relative;
-}
-
-.card:hover .overlay {
-    opacity: 1;
-}
-
-.card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.card h2 {
-    margin: 0;
-    font-size: 24px;
-    text-align: center;
-    padding: 20px;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.overlay p {
-    margin: 0;
-    font-size: 18px;
-    text-align: center;
-    padding: 20px;
-}
-
-.overlay a {
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: all 0.3s ease;
-}
-
-.overlay a:hover {
-    background-color: #1B4B72;
-    color: white;
+.home-hello{
+    background: url('../../../../assets/hello.gif');
 }

@@ -10,6 +10,11 @@ body, html {
     src: url(assets/fonts/rm_font.ttf) format('truetype');
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .rickymorty {
     font-family: rickymorty;
 }
@@ -28,4 +33,64 @@ body, html {
     font-size: 20px;
     text-align: center;
   }
+
+.image-background{
+    background-image: url('./assets/rmbackground2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+.home-background{
+    background-image: url('./assets/home-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.home-button-icon{
+    background-image: url('./assets/home.png');
+    background-position: 0 0;  
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+.characters-button-icon{
+    background-image: url('./assets/characters.png');
+    background-position: 0 0;  
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+.locations-button-icon{
+    background-image: url('./assets/locations.png');
+    background-position: 0 0;  
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+.episodes-button-icon{
+    background-image: url('./assets/episodes.png');
+    background-position: 0 0;  
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
 

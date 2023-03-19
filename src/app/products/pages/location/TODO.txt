@@ -1,1 +1,0 @@
-TODO: Que el número de residentes sea clicable y que nos lleve a un listado de estos con sus fotos y su nombre

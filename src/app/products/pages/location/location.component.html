@@ -1,19 +1,14 @@
 
 <div class="mx-3">
 
-    <h1 class="rickymorty text-center"> LOCATIONS </h1>
+    <h1 class="rickymorty text-center my-4 text-6xl"> LOCATIONS </h1>
 
-    <p-toolbar>
+    <div class="mb-3">
+
+        <p-button (click)="changeOrder('name')" class="mr-2" label="Order by name" icon="pi pi-sort" styleClass="p-button-secondary"></p-button>          
+        <p-button (click)="changeOrder('type')" class="mr-2" label="Order by type" icon="pi pi-sort" styleClass="p-button-secondary"></p-button>
     
-        <div class="p-toolbar-group-end">
-    
-            <p-button (click)="changeOrder('name')" class="mr-2" label="Order by name" icon="pi pi-sort" styleClass="p-button-success"></p-button>
-    
-            <p-button (click)="changeOrder('type')" class="mr-2" label="Order by type" icon="pi pi-sort" styleClass="p-button-danger"></p-button>
-    
-        </div>
-    
-    </p-toolbar>
+    </div>
     
     <p-table [value]="locations | sortBy:sortBy" [tableStyle]="{'max-width': '100%'}">
 
